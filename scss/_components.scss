@@ -1,0 +1,160 @@
+@mixin menuFontStyle($color, $bgcolor) {
+    color: $color;
+    background-color: $bgcolor;
+}
+
+@mixin cardStyle($color, $bg) {
+    color: $color;
+    background: $bg;
+}
+
+path {
+    transition: fill .4s ease;
+}
+
+header {
+    .nav-pills .nav-link.active, .nav-pills .nav-link:focus, .nav-pills .show>.nav-link {
+        @include menuFontStyle($second-color, $first-color)
+    }
+
+    .nav-link {
+        color: $second-color;
+    }
+
+    .nav-link:hover {
+        @include menuFontStyle($first-color, $second-color)
+    }
+}
+
+main {
+    .bd-placeholder-img {
+        font-size: 3.5rem;
+        text-anchor: middle;
+    }
+
+    #groups-carousel {
+        .carousel-item {
+            rect {
+                fill: rgba($second-color, 0.4);
+            }
+
+            text {
+                fill: $first-color;
+                font-size: 3.5rem;
+            }
+
+            @media (max-width: 575.98px) {
+                text {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    .featurette {
+        margin: 5rem 0;
+    }
+
+    @media (max-width: 575.98px) {
+        .featurette:first-child {
+            margin: 3rem;
+            text-align: center;
+        }
+    }
+
+    .section-title {
+        margin: 8rem;
+        text-align: center;
+    }
+
+    .card {
+        border-radius: 15px;
+        text-align: center;
+        width: 25rem;
+
+        img {
+            margin: 25px auto;
+            max-width: 12rem;
+        }
+
+        .card-body {
+            padding: 2rem;
+
+            a.btn {
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    #bootstrap-card {
+        @include cardStyle($third-color, $bootstrap-color);
+
+        svg {
+            margin: 2rem auto 0 auto;
+            max-width: 12rem;
+
+            path {
+                fill: $third-color;
+            }
+        }
+
+        .card-body {
+            
+            a.btn {
+                background: $third-color;
+                border: none;
+                color: $bootstrap-color;
+            }
+        }
+    }
+
+    #sass-card {
+        @include cardStyle($third-color, $sass-color);
+
+        svg {
+            margin: 2rem auto 0 auto;
+            max-height: 8rem;
+            max-width: 12rem;
+
+            path {
+                fill: $third-color;
+            }
+        }
+
+        .card-body {
+            
+            a.btn {
+                background: $third-color;
+                border: none;
+                color: $sass-color;
+            }
+        }
+    }
+}
+
+footer {
+    #brand {
+        text-align: center;
+
+        .text-muted {
+            color: rgba($third-color, 0.6) !important;
+    
+            span {
+                span {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    li {
+        path {
+            fill: $first-color;
+        }
+
+        &:hover path {
+            fill: $third-color;
+        }
+    }
+}

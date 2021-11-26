@@ -1,0 +1,49 @@
+html {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    padding: 1.5rem 0 1rem 0;
+}
+
+footer {
+    margin-top: 10rem;
+    img {
+        margin: 0.5rem;
+    }
+}
+
+// portrait phones
+@media (max-width: 575.98px) {
+    footer {
+        padding: 1.5rem 0;
+
+        ul {
+            padding: 1.5rem 0 0 0;
+        }
+    }
+}
+
+// landscape phones
+@media (max-width: 767.98px) {
+
+}
+
+// tablets
+@media (max-width: 991.98px) {
+
+}
+
+// desktops
+@media (max-width: 1199.98px) {
+
+}
+
+// large desktops
+@media (max-width: 1399.98px) {
+    
+}

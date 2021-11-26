@@ -1,0 +1,17 @@
+$first-color: #FEE97E;
+$second-color: #000000;
+$third-color: #ffffff;
+$bootstrap-color: #7952b3;
+$sass-color: #BF4080;
+
+$principal-font: 'Roboto', sans-serif;
+
+
+html {
+    font-family: $principal-font;
+    font-size: 16px;
+}
+
+footer {
+    background: $second-color;
+}

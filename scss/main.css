@@ -1,0 +1,173 @@
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+footer {
+  background: #000000;
+}
+
+html {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  padding: 1.5rem 0 1rem 0;
+}
+
+footer {
+  margin-top: 10rem;
+}
+
+footer img {
+  margin: 0.5rem;
+}
+
+@media (max-width: 575.98px) {
+  footer {
+    padding: 1.5rem 0;
+  }
+  footer ul {
+    padding: 1.5rem 0 0 0;
+  }
+}
+
+path {
+  -webkit-transition: fill .4s ease;
+  transition: fill .4s ease;
+}
+
+header .nav-pills .nav-link.active, header .nav-pills .nav-link:focus, header .nav-pills .show > .nav-link {
+  color: #000000;
+  background-color: #FEE97E;
+}
+
+header .nav-link {
+  color: #000000;
+}
+
+header .nav-link:hover {
+  color: #FEE97E;
+  background-color: #000000;
+}
+
+main .bd-placeholder-img {
+  font-size: 3.5rem;
+  text-anchor: middle;
+}
+
+main #groups-carousel .carousel-item rect {
+  fill: rgba(0, 0, 0, 0.4);
+}
+
+main #groups-carousel .carousel-item text {
+  fill: #FEE97E;
+  font-size: 3.5rem;
+}
+
+@media (max-width: 575.98px) {
+  main #groups-carousel .carousel-item text {
+    font-size: 2rem;
+  }
+}
+
+main .featurette {
+  margin: 5rem 0;
+}
+
+@media (max-width: 575.98px) {
+  main .featurette:first-child {
+    margin: 3rem;
+    text-align: center;
+  }
+}
+
+main .section-title {
+  margin: 8rem;
+  text-align: center;
+}
+
+main .card {
+  border-radius: 15px;
+  text-align: center;
+  width: 25rem;
+}
+
+main .card img {
+  margin: 25px auto;
+  max-width: 12rem;
+}
+
+main .card .card-body {
+  padding: 2rem;
+}
+
+main .card .card-body a.btn {
+  font-weight: bold;
+}
+
+main #bootstrap-card {
+  color: #ffffff;
+  background: #7952b3;
+}
+
+main #bootstrap-card svg {
+  margin: 2rem auto 0 auto;
+  max-width: 12rem;
+}
+
+main #bootstrap-card svg path {
+  fill: #ffffff;
+}
+
+main #bootstrap-card .card-body a.btn {
+  background: #ffffff;
+  border: none;
+  color: #7952b3;
+}
+
+main #sass-card {
+  color: #ffffff;
+  background: #BF4080;
+}
+
+main #sass-card svg {
+  margin: 2rem auto 0 auto;
+  max-height: 8rem;
+  max-width: 12rem;
+}
+
+main #sass-card svg path {
+  fill: #ffffff;
+}
+
+main #sass-card .card-body a.btn {
+  background: #ffffff;
+  border: none;
+  color: #BF4080;
+}
+
+footer #brand {
+  text-align: center;
+}
+
+footer #brand .text-muted {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+footer #brand .text-muted span span {
+  display: inline-block;
+}
+
+footer li path {
+  fill: #FEE97E;
+}
+
+footer li:hover path {
+  fill: #ffffff;
+}
+/*# sourceMappingURL=main.css.map */
