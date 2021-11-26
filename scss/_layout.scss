@@ -28,22 +28,27 @@ footer {
     }
 }
 
-// landscape phones
-@media (max-width: 767.98px) {
+#linkedin-container {
+    margin: 6rem auto;
 
-}
+    h1 {
+        margin-bottom: 3rem;
+    }
 
-// tablets
-@media (max-width: 991.98px) {
+    .accordion-body ul {
+        li {
+            margin: 1rem;
 
-}
+            a {
+                color: $second-color;
+                padding: 0.3rem 0.5rem 0.5rem 0.5rem;
+                text-decoration: none;
 
-// desktops
-@media (max-width: 1199.98px) {
-
-}
-
-// large desktops
-@media (max-width: 1399.98px) {
-    
+                &:hover {
+                    background: $first-color;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
 }
